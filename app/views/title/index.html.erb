@@ -1,0 +1,18 @@
+<div id="pins" class="pins">
+  <%@pins.each do |pin| %>
+    <%=render :partial => 'title/pin', :locals => { :pin => pin } %>
+  <%end%>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    var $container = $('#pins');
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '.pin',
+        columnWidth: 240,
+        isAnimated: true
+      });
+    });
+  })
+</script>

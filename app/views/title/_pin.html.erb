@@ -1,0 +1,13 @@
+<div class="pin">
+  <a href="<%=pin_path_url :id => pin.id%>">
+    <div class="pic">
+      <%=image_tag pin.picture.url(:thumb)%>
+    </div>
+    <div class="title cursive">
+      <%=pin.title%>
+    </div>
+    <div class="descr">
+      <%=pin.description.html_safe%>
+    </div>
+  </a>
+</div>

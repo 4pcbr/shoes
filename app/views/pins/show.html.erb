@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @pin.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @pin.description %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%= @pin.text %>
+</p>
+
+<%if @pin.picture.file? %>
+  <p>
+    <b>Picture:</b>
+    <br>
+    <%=image_tag @pin.picture.url(:thumb) %>
+  </p>
+<% end %>
+
+
+<%= link_to 'Edit', edit_pin_path(@pin) %> |
+<%= link_to 'Back', pins_path %>

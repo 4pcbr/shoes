@@ -1,0 +1,45 @@
+// Place all the styles related to the title controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cursive {
+  font-family: 'Lobster', cursive;
+}
+
+h1.big {
+  font-size: 5em;
+  text-align: center;
+}
+
+h1.big a {
+  text-decoration: none;
+  color: lightpink;
+}
+
+h1.big a:hover {
+  background-color: lightpink;
+  color: #FFF;
+}
+
+.pin {
+  margin: 10px;
+  float: left;
+}
+
+.pin .title {
+  font-size: 1.2em;
+}
+
+.pin a {
+  text-decoration: none;
+  color: #000;
+}
+
+.pin a:hover {
+  text-decoration: underline;
+  color: lightblue;
+}
+
+.block {
+  margin: 20px;
+}

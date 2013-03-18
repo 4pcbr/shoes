@@ -1,0 +1,26 @@
+<div class="block">
+  <h1 class="big cursive"><%=@pin.title%></h1>
+</div>
+
+<div class="block">
+  <%=image_tag @pin.picture.url(:medium)%>
+</div>
+
+<div class="block">
+  <%=@pin.description%>
+</div>
+
+<div class="block">
+  <%=@pin.text%>
+</div>
+
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_pinterest_pinit"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5147334a6ffa9e52"></script>
+<!-- AddThis Button END -->
